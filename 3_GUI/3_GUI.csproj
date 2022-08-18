@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>_3_GUI</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AForge.Video.DirectShow" Version="2.2.5" />
+    <PackageReference Include="BarcodeLib" Version="2.4.0" />
+    <PackageReference Include="ExcelDataReader" Version="3.6.0" />
+    <PackageReference Include="ExcelDataReader.DataSet" Version="3.6.0" />
+    <PackageReference Include="LiveCharts.WinForms" Version="0.9.7.1" />
+    <PackageReference Include="Z.Dapper.Plus" Version="4.0.19" />
+    <PackageReference Include="ZXing.Net" Version="0.16.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\2_BUS\2_BUS.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BarcodeLib">
+      <HintPath>C:\Users\User\Downloads\BarcodeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="QRCoder">
+      <HintPath>C:\Users\User\Downloads\QRCoder.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
